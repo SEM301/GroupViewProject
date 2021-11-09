@@ -89,7 +89,7 @@ namespace GroupViewProject
         {
             try
             {
-                if (!String.IsNullOrWhiteSpace(tbNameGroup.Text) || !String.IsNullOrWhiteSpace(tbNumberGroup.Text) || !String.IsNullOrWhiteSpace(tbCurator.Text) || !String.IsNullOrWhiteSpace(tbIdGroup.Text))
+                if (!String.IsNullOrWhiteSpace(tbNameGroup.Text) && !String.IsNullOrWhiteSpace(tbNumberGroup.Text) && !String.IsNullOrWhiteSpace(tbCurator.Text) && !String.IsNullOrWhiteSpace(tbIdGroup.Text))
                 {
                     Group group = new Group()
                     {
