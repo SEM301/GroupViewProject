@@ -69,6 +69,7 @@ namespace GroupViewProject
                         {
                             groups.Add(new Group()
                             {
+                                idGroup = sqlDataReader.GetInt32(0),
                                 NameGroup = sqlDataReader.GetString(1),
                                 NumberGroup = sqlDataReader.GetString(2),
                                 CuratorGroup = sqlDataReader.GetString(3)

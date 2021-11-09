@@ -24,15 +24,13 @@ namespace GroupViewProject
         {
             InitializeComponent();
             UpdListView();
-
-
         }
 
         void UpdListView()
         {
             Main main = new Main();
 
-            lvViewGroup.ItemsSource = main.ReadGroup();
+            dbViewGroup.ItemsSource = main.ReadGroup();
         }
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
@@ -61,13 +59,10 @@ namespace GroupViewProject
             {
 
                 MessageBox.Show(error.Message);
-            }
-
-            
+            }      
         }
         private void btnDel_Click(object sender, RoutedEventArgs e)
-        {
-            
+        {           
             try 
             {
                 if (!String.IsNullOrWhiteSpace(tbIdGroup.Text))
@@ -89,7 +84,6 @@ namespace GroupViewProject
             {
                 MessageBox.Show(error.Message);
             }
-
         }
         private void btnUpd_Click(object sender, RoutedEventArgs e)
         {

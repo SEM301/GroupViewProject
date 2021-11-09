@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GroupViewProject"
         mc:Ignorable="d"
-        Title="Group View" Height="528.061" Width="699.908">
+        Title="Group View" Height="528.061" Width="1023.954">
     <Canvas>
         <Label Content="Название специальности:" Canvas.Left="104" Canvas.Top="68" />
         <TextBox x:Name="tbNameGroup" Height="33" Width="230" Canvas.Left="104" Canvas.Top="99" />
@@ -18,9 +18,7 @@
         <Button x:Name="btnAdd" Content="Добавить" Height="44" Width="180" Canvas.Left="60" Canvas.Top="430" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnAdd_Click"/>
         <Button x:Name="btnDel" Content="Удалить" Height="44" Width="180" Canvas.Left="265" Canvas.Top="430" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnDel_Click"/>
         <Button x:Name="btnUpd" Content="Изменить" Height="44" Width="180" Canvas.Left="470" Canvas.Top="430" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnUpd_Click"/>
-        <ListView x:Name="lvViewGroup"  Height="300" Width="269" Canvas.Left="379" Canvas.Top="99" DisplayMemberPath="NumberGroup" >
-
-        </ListView>
         <Label Content="Список групп:" Canvas.Left="379" Canvas.Top="73" />
+        <DataGrid x:Name="dbViewGroup" Height="260" Canvas.Left="385" Canvas.Top="105" Width="480"/>
     </Canvas>
 </Window>
