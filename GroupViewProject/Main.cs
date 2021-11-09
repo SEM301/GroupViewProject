@@ -54,14 +54,10 @@ namespace GroupViewProject
             {
                 using (SqlConnection connection = new SqlConnection(strConnection))
                 {
-
                     connection.Open();
                     SqlCommand cmd = new SqlCommand(SqlCmd, connection);
-
                     // Получаем строки из таблицы
-                    SqlDataReader sqlDataReader = cmd.ExecuteReader();
-
-                    
+                    SqlDataReader sqlDataReader = cmd.ExecuteReader();                    
                     if (sqlDataReader.HasRows)
                     {
                         // Построчно считываем данные
@@ -82,10 +78,8 @@ namespace GroupViewProject
             {
                 MessageBox.Show(error.Message);
             }
-
             return groups;
         }
-
         public void DelGroup (Group group)
         {
             string SqlCmd = $"Delete From [dbo].[group] Where idGroup={group.idGroup};";
@@ -122,7 +116,6 @@ namespace GroupViewProject
                 MessageBox.Show(error.Message);
             }
         }
-
     }
     /// <summary>
     ///  Описание таблицы из БД
@@ -130,11 +123,8 @@ namespace GroupViewProject
     class Group
     {
         public int idGroup { get; set; }
-
         public string  NameGroup { get; set; }
-
         public string NumberGroup { get; set; }
-
         public string  CuratorGroup { get; set; }
     }
 }

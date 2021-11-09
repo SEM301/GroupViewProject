@@ -34,7 +34,7 @@ namespace GroupViewProject
         }
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            try 
+            try
             {
                 if (!String.IsNullOrWhiteSpace(tbNameGroup.Text) && !String.IsNullOrWhiteSpace(tbNumberGroup.Text) && !String.IsNullOrWhiteSpace(tbCurator.Text))
                 {
@@ -48,7 +48,7 @@ namespace GroupViewProject
                     Main main = new Main();
 
                     main.AddGroup(group);
-                    UpdListView();                   
+                    UpdListView();
                 }
                 else
                 {
@@ -59,11 +59,11 @@ namespace GroupViewProject
             {
 
                 MessageBox.Show(error.Message);
-            }      
+            }
         }
         private void btnDel_Click(object sender, RoutedEventArgs e)
-        {           
-            try 
+        {
+            try
             {
                 if (!String.IsNullOrWhiteSpace(tbIdGroup.Text))
                 {
@@ -78,7 +78,7 @@ namespace GroupViewProject
                 else
                 {
                     MessageBox.Show("Поле пустое");
-                }               
+                }
             }
             catch (Exception error)
             {
@@ -102,14 +102,28 @@ namespace GroupViewProject
                     main.UpdGroup(group);
                     UpdListView();
                 }
-                else 
+                else
                 {
                     MessageBox.Show("Поля пустые");
-                }    
+                }
             }
             catch (Exception error)
             {
                 MessageBox.Show(error.Message);
+            }
+        }
+
+        private void dbViewGroup_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Group group = new Group();
+            group = dbViewGroup.SelectedItem as Group;
+            if (group != null)
+            {
+
+                tbIdGroup.Text = group.idGroup.ToString();
+                tbNameGroup.Text = group.NameGroup;
+                tbNumberGroup.Text = group.NumberGroup;
+                tbCurator.Text = group.CuratorGroup;
             }
         }
     }
