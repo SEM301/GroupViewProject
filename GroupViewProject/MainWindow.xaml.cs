@@ -74,6 +74,10 @@ namespace GroupViewProject
                     Main main = new Main();
                     main.DelGroup(group);
                     UpdListView();
+                    tbNameGroup.Clear();
+                    tbCurator.Clear();
+                    tbNumberGroup.Clear();
+                    tbIdGroup.Text="";
                 }
                 else
                 {
