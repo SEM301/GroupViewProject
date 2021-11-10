@@ -13,8 +13,7 @@
         <TextBox x:Name="tbCurator" Height="33" Width="230" Canvas.Left="104" Canvas.Top="259" />
         <Label Content="Номер группы:" Canvas.Left="104" Canvas.Top="150" />
         <Label Content="ФИО Куратора:" Canvas.Left="104" Canvas.Top="233" />
-        <TextBlock x:Name="tbIdGroup" Height="33" Width="230" Canvas.Left="104" Canvas.Top="335" />
-        <Label Content="Id группы:" Canvas.Left="104" Canvas.Top="303" />
+        <TextBlock  x:Name="tbIdGroup" Height="33" Width="230" Canvas.Left="104" Canvas.Top="335" Foreground="{x:Null}" />
         <Button x:Name="btnAdd" Content="Добавить" Height="44" Width="180" Canvas.Left="60" Canvas.Top="430" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnAdd_Click"/>
         <Button x:Name="btnDel" Content="Удалить" Height="44" Width="180" Canvas.Left="265" Canvas.Top="430" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnDel_Click"/>
         <Button x:Name="btnUpd" Content="Изменить" Height="44" Width="180" Canvas.Left="470" Canvas.Top="430" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnUpd_Click"/>
