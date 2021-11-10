@@ -14,9 +14,9 @@
         <Label Content="Номер группы:" Canvas.Left="105" Canvas.Top="136" FontSize="22" />
         <Label Content="ФИО Куратора:" Canvas.Left="107" Canvas.Top="216" FontSize="22" />
         <TextBlock  x:Name="tbIdGroup" Height="33" Width="230" Canvas.Left="104" Canvas.Top="335" Foreground="{x:Null}" />
-        <Button x:Name="btnAdd" Content="Добавить" Height="44" Width="250" Canvas.Left="60" Canvas.Top="430" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnAdd_Click" FontSize="22"/>
-        <Button x:Name="btnDel" Content="Удалить" Height="44" Width="250" Canvas.Left="265" Canvas.Top="430" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnDel_Click" FontSize="22"/>
-        <Button x:Name="btnUpd" Content="Изменить" Height="44" Width="250" Canvas.Left="605" Canvas.Top="426" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnUpd_Click" FontSize="22"/>
+        <Button x:Name="btnAdd" Content="Добавить" Height="44" Width="250" Canvas.Left="20" Canvas.Top="425" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnAdd_Click" FontSize="22"/>
+        <Button x:Name="btnDel" Content="Удалить" Height="44" Width="250" Canvas.Left="320" Canvas.Top="425" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnDel_Click" FontSize="22"/>
+        <Button x:Name="btnUpd" Content="Изменить" Height="44" Width="250" Canvas.Left="620" Canvas.Top="425" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnUpd_Click" FontSize="22"/>
         <Label Content="Список групп:" Canvas.Left="379" Canvas.Top="55" FontSize="22" RenderTransformOrigin="0.536,0.051" />
         <DataGrid x:Name="dbViewGroup" Height="260" Canvas.Left="385" Canvas.Top="105" Width="480" SelectionChanged="dbViewGroup_SelectionChanged" FontSize="18"/>
     </Canvas>
